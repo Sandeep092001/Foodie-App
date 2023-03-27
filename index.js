@@ -45,7 +45,9 @@ app.post("/verifyOtp", (req, res) => {
       res.json({ status: verification_check.status })
     );
 });
-
+app.get('/test', (req, res) => {
+  res.send('Hello New Bie');
+});
 app.post("/userData", (req, res) => {
   const MongoClient = require("mongodb-legacy").MongoClient;
   var url =
