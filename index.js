@@ -34,7 +34,7 @@ app.post("/verifyOtp", (req, res) => {
   console.log(otpCode, phone);
 
   const accountSid = "ACd7166b7f34eae32a2910240056f2c002";
-  const authToken = "3391e44df26ccb976b745d705cba99c2";
+  const authToken = "7b616afbf6843d8667b42149c13b63db";
   const verifySid = "VAd54d23dd3aad348df5642d72820e8aae";
   const client = require("twilio")(accountSid, authToken);
 
