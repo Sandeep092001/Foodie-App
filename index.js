@@ -8,7 +8,7 @@ app.use(express.urlencoded());
 // app.use(bodyParser.json());
 
 const accountSid = "ACd7166b7f34eae32a2910240056f2c002";
-const authToken = "3391e44df26ccb976b745d705cba99c2";
+const authToken = process.env.TWILIO_AUTH_TOKEN;
 const verifySid = "VAd54d23dd3aad348df5642d72820e8aae";
 const client = require("twilio")(accountSid, authToken);
 
